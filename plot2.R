@@ -12,7 +12,7 @@ plot2 <- function() {
       # add date/time column to the dataset
       df <- cbind(df,DateTime=strptime(paste(df$Date,df$Time), "%d/%m/%Y %H:%M:%S"))
       
-      #create histogram
+      #create plot
       plot(df$DateTime, df$Global_active_power, typ="l", xlab="", 
            ylab="Global Active Power (kilowatts)", 
            cex.axis=0.75, cex.lab=0.75)

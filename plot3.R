@@ -24,6 +24,5 @@ plot3 <- function() {
              lty=c(1,1),col=c("black","red","blue"),cex=0.8)
       
       #close png file
-      #dev.copy(png, file="plot3.png", width=480, height=480, bg="white")
       dev.off()
 }
